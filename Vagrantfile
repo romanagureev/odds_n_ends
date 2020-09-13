@@ -77,7 +77,7 @@ config.vm.provision "shell", inline: <<-SHELL
   cp /home/vagrant/odds_n_ends/vimrc /home/vagrant/.vimrc
 
   chown vagrant /home/vagrant/.vim /home/vagrant/.vim/bundle /home/vagrant/.vimrc
-
+  su vagrant
   vim +PluginInstall +qall
 SHELL
 
